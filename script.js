@@ -27,9 +27,27 @@ function decrementCounter () {
 }
 
 function resetCounter () {
-
+  const numberElement = document.querySelector("#counter")
+  let num = parseInt(numberElement.textContent)
+  num = 0
+  numberElement.textContent = num
+}
+ 
+ 
+function writeText() {
+const inputElement = document.querySelector("#input")
+const outputElement = document.querySelector("#output")
+ 
+const inputValue = inputElement.value
+const outputValue = outputElement.textContent
+ 
+const newValue = outputValue +"\n" + inputValue
+ 
+outputElement.textContent =newValue
+ 
 }
 
-function writeText () {
-  
+function changeColor() {
+  const body = document.querySelector("body")
+  body.style.color = "pink"
 }
