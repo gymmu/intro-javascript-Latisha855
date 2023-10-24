@@ -49,5 +49,12 @@ outputElement.textContent =newValue
 
 function changeColor() {
   const body = document.querySelector("body")
-  body.style.color = "pink"
+  body.style.color = "blue"
 }
+
+function changeBackground() {
+  const body = document.querySelector("body")
+  body.style.backgroundColor = "lightgreen"
+}
+
+

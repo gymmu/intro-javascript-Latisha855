@@ -27,15 +27,7 @@
         <button onclick="sayHello()">Say Hello!!!</button>
       </div>
     </section>
-    <section>
-      <h3>Hintergrund ändern</h3>
-      <div class="content">
-        Mann kann die Hintergrundfarbe der Webseite auf Knopfdruck verstellen.
-      </div>
-      <div class="center">
-        <button onclick="changeBackground()">Hintergrund ändern</button>
-      </div>
-    </section>
+    
   </main>
 
 
@@ -48,8 +40,9 @@
 <p id="input">Hier steht Text der später gelöscht werden soll.</p>
 <button onclick="deleteText()">Text löschen</button>
 <section>
+
 <h3>Text einlesen</h3>
-<input type="text" id="input">
+
 <div class="center">
 <button onclick="writeText()">Text hinzufügen</button>
 <input type="text" id="input">
@@ -58,19 +51,25 @@
 </section>
 
 <section>
-  <h3>Text einlesen</h3>
+  <h3>Hintergrund ändern</h3>
 <div class="content">
-  <input type="text" id="input">
+  
   <pre id="output"></pre>
-  <button onclick="writeText()">Text hinzufügen</button>
+  
   <div class="center">
+    <button onclick="changeBackground()">Hintergrund</button>
   </div>
 </section>
 
 
   <section>
     <h3>Notizen</h3>
-  <div class="countent">
+  <div class="content">
+    Ich habe gelernt, wie man Funktionen programmiert und
+    wie man eine Webseite genauer gestalten kann. Was ich mir
+    genauer anschauen sollte, wäre das mit den div classes.
+    <p id="output"></p>
+  </div>
   <input type="text" id="input">
   <button onclick="writeText()">Text hinzufügen</button>
   <pre id = "output"></pre>
@@ -78,8 +77,6 @@
   </div>
   </section>
 
-
-<p id="output">Hier steht Text der später gelöscht werden soll.</p>
 
 <section>
   <h3>Schriftfarbe ändern</h3>
@@ -89,6 +86,17 @@
 <div class="center">
   <button onclick="changeColor()">Text hinzufügen</button>
 </div>
+</section>
+
+
+<section>
+  <h3>On Changes</h3>
+  <div class="content">
+    Man kann den Background von einem Titel dynamisch anpassen.
+  </div>
+  <div class="center">
+<input type="range" id="range" oninput="updateRange()">
+  </div>
 </section>
 
 </body>
